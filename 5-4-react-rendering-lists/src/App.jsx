@@ -121,7 +121,7 @@ import "./index.css";
 export default function App() {
   const [courses, setCourses] = useState(sampleCourses);
 
-  // Helper function (no need to edit this.)
+  // Helper function (no need to edit this)
   function mutateCourseByIndex(index, updater) {
     setCourses((cs) =>
       cs.map((c, i) => (i === index ? { ...c, tasks: updater(c.tasks) } : c))
